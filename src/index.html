@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantenimiento de Personas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mantenimiento de Personas</h1>
+    <form id="person-form">
+      <input type="text" id="name" placeholder="Nombre" required>
+      <input type="number" id="age" placeholder="Edad" required>
+      <button type="submit">Agregar Persona</button>
+    </form>
+    <div id="person-list">
+        <div>
+            <h4>Personas Ingresadas en LocalStorage</h4>
+            <div id="local-person-list"></div>
+        </div>
+        <div>
+            <h4>Personas Ingresadas en SessionStorage</h4>
+            <div id="session-person-list"></div>
+        </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
